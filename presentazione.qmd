@@ -1,0 +1,315 @@
+---
+title: "Il Multiverso EEG"
+author: "Vincenzo D'Adamo"
+format: 
+  revealjs:
+    fragments: true
+    theme: dark
+csl: apa.csl
+toc: false
+embed-resources: true
+code-fold: true
+echo: true
+cache: true
+---
+
+## 
+
+<!-- Slide Marvel -->
+
+<div style="text-align: center;">
+  <img src="img/marvel.png" style="width: 100%; height: auto;">
+</div>
+
+## {.unlisted auto-animate="true"}
+
+<!-- Slide Marvel sbarrata + gattino -->
+
+<div style="position: relative; text-align: center;">
+
+  <!-- Immagine principale -->
+  <img src="img/marvel.png" style="width: 100%; height: auto;">
+
+  <!-- X rossa sovrapposta -->
+  <img src="img/x.png"
+       style="
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         width: 120%;
+         transform: translate(-50%, -50%);
+       ">
+</div>
+
+<div style="position: absolute; bottom: 10px; right: 10px;">
+<img src="img/meme_1.png" width="150">
+</div>
+
+## 
+
+<div style="
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+">
+
+  <!-- Immagine a sinistra -->
+  <img src="img/eeg.png" style="width: 90%; height: auto;">
+
+  <!-- Immagine ERP -->
+  <img src="img/erp.png" style="width: 110%; height: auto;">
+
+
+</div>
+
+## 
+
+<div style="
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  text-align: center;
+">
+  Se facessi così?
+</div>
+
+##
+
+
+
+<!-- Immagine Multiverse -->
+
+![](img/multiv_1.png){fig-align="center"}
+
+## Letteratura attuale vs. Multiverse
+
+::::: columns
+::: {.column width="50%" .incremental}
+
+Pipeline tipica EEG
+
+- Arbitrarietà nelle decisioni
+ 
+- Poca trasparenza
+
+- Bassa replicabilità
+
+- BAD PRACTICE
+
+:::
+
+::: {.column width="50%"}
+
+Multiverse
+
+- Astinenza dalla decisione
+
+- Massima Trasparenza
+
+- Massima Replicabilità
+
+- Good Practice
+
+:::
+
+:::::
+
+
+## 
+
+<div style="
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+">
+
+  <!-- Immagine a sinistra -->
+  <img src="img/n2pc.jpg" style="width: 90%; height: auto;">
+
+  <!-- Immagine ERP -->
+  <img src="img/visual_search.jpg" style="width: 110%; height: auto;">
+
+  
+</div>
+
+## Addio Matlab
+
+![](img/mne.png){fig-align="center"}
+
+##
+
+![](img/erpcore.png){fig-align="center"}
+
+
+## Passaggi Cruciali pipeline
+
+:::{.incremental}
+
+- Baseline
+
+- Filtraggio
+
+- Referencing
+
+- Rimozione artefatti oculari
+
+- Interpolazione
+
+:::
+
+## Baseline
+
+Solo pre-stimolo
+
+:::{.fragment}
+
+- -200 ms
+
+- -100 ms
+
+- -50 ms
+
+- -10 ms
+
+
+:::
+
+## Filtraggio
+
+2 filtri passa-banda:
+
+
+## Filtraggio
+
+2 filtri passa-banda: Butterworth e Bessel
+
+:::{.fragment}
+
+- Ordine filtri costante
+
+- Variazione threshold
+
+:::
+
+## Filtraggio
+
+2 filtri passa-banda: Butterworth e Bessel
+
+:::{column}
+
+- Ordine filtri costante
+
+- Variazione threshold
+
+- Pochi effetti sulla forma d'onda
+
+- Gli unici usati in letteratura
+
+:::
+
+## Referencing
+
+:::{.incremental}
+
+- Mastoid referencing
+
+- Common Average Referencing
+
+- No ref
+
+:::
+
+## Referencing
+
+:::{column}
+
+- Mastoid referencing
+
+- Common Average Referencing
+
+- No ref -> Current Source Density Estimation
+
+:::
+
+## Artefatti oculari
+
+:::{.fragment}
+
+- ICA
+
+- Linear Regression
+
+- Rimozione epoche 
+
+:::
+
+## Artefatti oculari
+
+:::{column}
+
+- ICA
+
+- Linear Regression
+
+- Rimozione epoche 
+
+:::
+
+Stiamo osservando lo stesso processo cognitivo?
+
+## Artefatti oculari
+
+:::{column}
+
+- ICA
+
+- Linear Regression
+
+- Rimozione epoche 
+
+:::
+
+Stiamo osservando lo stesso processo cognitivo?
+
+Grazie Multiverse!
+
+## 
+
+![](img/domanda.png){fig-align="center"}
+
+##
+
+<!-- Meme -->
+![](img/meme.jpeg){fig-align="center"}
+
+## Obiettivo finale
+
+NO Giusto vs Sbagliato
+
+## Obiettivo finale
+
+NO Giusto vs Sbagliato
+
+SI Mappa della variabilità introdotta dalle decisioni
+
+## Conclusione
+
+:::{.fragment}
+
+- Variabilità
+
+- Trasparenza
+
+- Replicabilità
+
+:::
+
+##
+
+Grazie
+
+![](img/meme_fine.jpeg){fig-align="center"}
+
